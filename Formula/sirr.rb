@@ -1,26 +1,26 @@
 class Sirr < Formula
   desc "CLI client for Sirr — push (dead drop), set (org secrets), get, and audit"
   homepage "https://github.com/sirrlock/sirr"
-  version "2.0.55"
+  version "2.0.56"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/sirrlock/sirr/releases/download/v#{version}/sirr-darwin-arm64.tar.gz"
-      sha256 "a05b137bd01551d64cdef42479abed09c216353cdf7204eb1866bf4a29ec4fe2"
+      sha256 "5433f306a18527648d72d18f7de40a66877e4101351f1c3e60b9ab02b78dfa74"
     else
       url "https://github.com/sirrlock/sirr/releases/download/v#{version}/sirr-darwin-x64.tar.gz"
-      sha256 "d5401bcc8e99320d3ba44dbc5c6a1288f933f2106ee518fdc581a23bec85be8c"
+      sha256 "17f45330634ccc3e94f1cd83526305d19d05d849c7efa3723fc53ccae42f7f11"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/sirrlock/sirr/releases/download/v#{version}/sirr-linux-arm64.tar.gz"
-      sha256 "f25a814ba0fa8809d3a90060ec993bb6d941102af9f12f8c82c5a97c2b1ebbd9"
+      sha256 "996607ac7ad7032e76a8b2aa7f59db8c35a2d230854c55c9f0d936c441f1ab43"
     else
       url "https://github.com/sirrlock/sirr/releases/download/v#{version}/sirr-linux-x64.tar.gz"
-      sha256 "3c28457f6b79b4275956f40daf75ea490b02db17b71abd1f21701ed9926c7ee2"
+      sha256 "6b3773e64587e372f583b9403b9ef11e4eb21be6a09c0c11420722108d418035"
     end
   end
 
